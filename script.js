@@ -128,6 +128,13 @@ function checkAnswer(btn, correct) {
   document.getElementById("quiz-next").className = "quiz-next show";
 }
 
+document
+  .getElementById("restart-quiz")
+  .addEventListener("click", () => restartQuiz());
+document
+  .getElementById("quiz-next")
+  .addEventListener("click", () => nextQuestion());
+
 function nextQuestion() {
   current++;
   if (current >= questions.length) {
