@@ -422,9 +422,7 @@
             </button>
           </div>
           <div class="quiz-feedback" id="quiz-feedback"></div>
-          <button class="quiz-next" id="quiz-next" onclick="nextQuestion()">
-            Próxima pergunta! →
-          </button>
+          <button class="quiz-next" id="quiz-next">Próxima pergunta! →</button>
         </div>
         <div id="quiz-score" style="display: none; text-align: center">
           <div style="font-size: 64px; margin-bottom: 16px" id="score-emoji">
@@ -448,7 +446,7 @@
           ></div>
           <button
             class="btn-fun yellow"
-            onclick="restartQuiz()"
+            id="restart-quiz"
             style="margin-top: 20px"
           >
             🔄 Jogar de novo!
@@ -491,4 +489,3 @@
     </footer>
   </body>
 </html>
-
